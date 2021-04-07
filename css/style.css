@@ -1,0 +1,161 @@
+/* Color Palette
+https://coolors.co/0081a7-00afb9-fdfcdc-fed9b7-f07167
+#0081a7 - CG Blue
+#00afb9 - Verdigrils
+#fdfcdc - Light Yellow
+#fed9b7 - Peach Puff
+#f07167 - Bittersweet
+#00171f - almost dark
+#f6fff8 - almost white
+ */
+/* Global styles
+-------------------------------------------- */
+html{
+    box-sizing: border-box;
+}
+*, *:before,*:after{
+    box-sizing: inherit;
+}
+body{
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height:1.5;
+}
+img{
+    width: 300px;
+}
+a {
+    color: #f07167;
+}
+a:hover{
+    text-decoration: none;
+}
+h1{
+    font-size: 100px;
+    line-height: 1;
+}
+h2{
+    font-size: 45px;
+}
+h3{
+    margin-bottom: 0;
+}
+h1, h2 {
+    font-family: 'Sriracha', cursive;
+    font-weight: 400;
+    margin:0;
+}
+.content-wrap{
+    max-width: 800px;
+    width:85%;
+    margin: 0 auto;
+    padding: 60px 0;
+} 
+.item-details h3+p{
+    font-style:italic;
+}
+.item-details h3~p{
+    margin: 0;
+}
+.divider > section {
+    border-bottom: 1 px dashed #343434;
+    padding: 25px 0;
+}
+.divider > section:last-of-type {
+    border-bottom:none;
+}
+
+/* Profile
+-------------------------------------------- */
+header{
+    background-color: #f07167;
+    color: #f6fff8 ;
+}
+/* Projects
+-------------------------------------------- */
+.projects {
+    background-color:#fdfcdc;
+}
+.projects .btn{
+    color: #f6fff8;
+    background: rgb(0, 64, 138);
+    text-decoration: none;
+    padding: 8px;
+    border-radius:4px;
+}
+.projects .btn:hover{
+    background:rgba(0, 64, 138,80%) ;
+}
+.project-item{
+    overflow: hidden;
+}
+.project-item h3{
+    margin-top: 0;
+}
+/* Work Experience
+-------------------------------------------- */
+.work-experience {
+    background-color: #fed9b7;
+}
+
+/* Education
+-------------------------------------------- */
+.education{
+    background-image: url(../images/joanna-kosinska-unsplash.jpg);
+    background-size: cover;
+    background-position: top right;
+    padding-bottom: 100px;
+}
+
+/* Contact Info
+-------------------------------------------- */
+footer{
+    background-color: #00171f ;
+    color: #f6fff8 ;
+}
+.contact-list{
+    list-style-type: none;
+    padding: 0;
+}
+.contact-list a{
+    padding: 15px;
+    display: inline-block;
+}
+
+/* Responsive
+-------------------------------------------- */
+@media screen and (min-width: 750px) {
+    header, footer{
+        text-align: center;
+    }
+    .project-item img{
+        float: left;
+        margin-right: 20px ;
+    }
+    .job-item {
+        display:grid;
+        grid-template-columns: 2fr 3fr;
+        column-gap: 20px;
+    }
+    .contact-list {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:749px){
+    h1{
+        font-size: 75px;
+    line-height: 0.9;
+    margin-bottom: 20px;
+    }
+    h2{
+        line-height: 1;
+    }
+    .contact-list a{
+        padding:5px;
+    }
+}
